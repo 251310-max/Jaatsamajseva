@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaat Samaj Seva | जाट समाज सेवा</title>
+<meta name="description" content="Matrimonial, property, jobs and education services for the Jaat community.">
+<style>
+:root{--bg:#fbf7ef;--surface:#fff;--text:#2a2118;--muted:#6b5d4d;--accent:#b4531a;--on:#fff;--border:#e6dccb}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1611;--surface:#262019;--text:#f3ebdd;--muted:#b9ab97;--accent:#e08a4d;--on:#1b1611;--border:#3a3126}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI","Noto Sans Devanagari",sans-serif;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:1.15rem;color:var(--accent)}
+nav a{color:var(--text);text-decoration:none;margin-right:14px;font-size:.95rem}
+.lang{display:flex;border:1px solid var(--border);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;padding:8px 14px;font:inherit;font-size:.9rem;color:var(--text);cursor:pointer}
+.lang button.on{background:var(--accent);color:var(--on)}
+h1{font-size:clamp(1.8rem,6vw,2.8rem);line-height:1.2;margin:32px 0 12px}
+h2{font-size:1.4rem;margin:40px 0 14px}
+.muted{color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--on);padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;border:0;font:inherit;font-weight:600;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card,form,.legal{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px}
+.card .ic{font-size:1.8rem}.card h3{margin:6px 0 4px;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+label{display:block;margin:12px 0 4px;font-size:.95rem}
+input[type=text],input[type=tel],input[type=email]{width:100%;padding:11px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
+.chk{display:flex;gap:8px;align-items:flex-start;margin:8px 0}.chk input{margin-top:6px}
+#msg{margin-top:12px;font-weight:600}
+.legal h3{margin:18px 0 4px}.legal ul{margin:6px 0;padding-left:20px}
+.note{font-size:.85rem;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 0}
+[data-lang="hi"] [data-en],[data-lang="en"] [data-hi]{display:none}
+</style>
+</head>
+<body data-lang="en">
+<div class="wrap">
+<header>
+  <div class="logo">🌾 <span data-en>Jaat Samaj Seva</span><span data-hi>जाट समाज सेवा</span></div>
+  <nav><a href="#services"><span data-en>Services</span><span data-hi>सेवाएँ</span></a><a href="#join"><span data-en>Join</span><span data-hi>जुड़ें</span></a><a href="#privacy"><span data-en>Privacy</span><span data-hi>गोपनीयता</span></a><a href="#terms"><span data-en>Terms</span><span data-hi>शर्तें</span></a></nav>
+  <div class="lang"><button id="b-en" class="on" onclick="setLang('en')">English</button><button id="b-hi" onclick="setLang('hi')">हिन्दी</button></div>
+</header>
+
+<h1><span data-en>One trusted place for the whole community</span><span data-hi>पूरे समाज के लिए एक भरोसेमंद मंच</span></h1>
+<p class="muted"><span data-en>Matrimonial, property, jobs, education and more, built by the community, for the community.</span><span data-hi>वैवाहिक, संपत्ति, रोज़गार, शिक्षा और बहुत कुछ, समाज द्वारा, समाज के लिए।</span></p>
+<a class="btn" href="#join"><span data-en>Join the community</span><span data-hi>समाज से जुड़ें</span></a>
+
+<h2 id="services"><span data-en>Our services</span><span data-hi>हमारी सेवाएँ</span></h2>
+<div class="grid">
+<div class="card"><div class="ic">💍</div><h3><span data-en>Matrimonial</span><span data-hi>वैवाहिक</span></h3><p><span data-en>Verified profiles and biodata for families.</span><span data-hi>परिवारों के लिए सत्यापित प्रोफ़ाइल और बायोडाटा।</span></p></div>
+<div class="card"><div class="ic">🏡</div><h3><span data-en>Property consultancy</span><span data-hi>संपत्ति सलाह</span></h3><p><span data-en>Buy, sell or rent land and homes.</span><span data-hi>ज़मीन और मकान खरीदें, बेचें या किराये पर दें।</span></p></div>
+<div class="card"><div class="ic">💼</div><h3><span data-en>Jobs and business</span><span data-hi>रोज़गार और व्यापार</span></h3><p><span data-en>Job openings and a business directory.</span><span data-hi>नौकरियाँ और व्यवसाय डायरेक्टरी।</span></p></div>
+<div class="card"><div class="ic">🎓</div><h3><span data-en>Education and career</span><span data-hi>शिक्षा और करियर</span></h3><p><span data-en>Scholarships, coaching and mentoring.</span><span data-hi>छात्रवृत्ति, कोचिंग और मार्गदर्शन।</span></p></div>
+<div class="card"><div class="ic">⚖️</div><h3><span data-en>Legal and financial help</span><span data-hi>कानूनी और वित्तीय सहायता</span></h3><p><span data-en>Licensed lawyers, CAs and advisors.</span><span data-hi>लाइसेंस प्राप्त वकील, सीए और सलाहकार।</span></p></div>
+<div class="card"><div class="ic">🚜</div><h3><span data-en>Agriculture</span><span data-hi>कृषि</span></h3><p><span data-en>Land leasing, equipment and produce market.</span><span data-hi>ज़मीन पट्टा, उपकरण और उपज बाज़ार।</span></p></div>
+</div>
+
+<h2 id="join"><span data-en>Join / show interest</span><span data-hi>जुड़ें / रुचि बताएँ</span></h2>
+<form id="f">
+  <label><span data-en>Full name</span><span data-hi>पूरा नाम</span></label><input type="text" name="name" required>
+  <label><span data-en>Mobile number</span><span data-hi>मोबाइल नंबर</span></label><input type="tel" name="phone" required pattern="[0-9+ ]{10,15}">
+  <label><span data-en>Email (optional)</span><span data-hi>ईमेल (वैकल्पिक)</span></label><input type="email" name="email">
+  <label><span data-en>Village / City</span><span data-hi>गाँव / शहर</span></label><input type="text" name="place">
+  <label><span data-en>Services you are interested in</span><span data-hi>आपकी रुचि की सेवाएँ</span></label>
+  <div class="chk"><input type="checkbox" name="svc" value="matrimonial" id="s1"><label for="s1" style="margin:0"><span data-en>Matrimonial</span><span data-hi>वैवाहिक</span></label></div>
+  <div class="chk"><input type="checkbox" name="svc" value="property" id="s2"><label for="s2" style="margin:0"><span data-en>Property</span><span data-hi>संपत्ति</span></label></div>
+  <div class="chk"><input type="checkbox" name="svc" value="jobs" id="s3"><label for="s3" style="margin:0"><span data-en>Jobs / Business</span><span data-hi>रोज़गार / व्यापार</span></label></div>
+  <div class="chk"><input type="checkbox" name="svc" value="education" id="s4"><label for="s4" style="margin:0"><span data-en>Education</span><span data-hi>शिक्षा</span></label></div>
+  <div class="chk"><input type="checkbox" id="consent" required><label for="consent" style="margin:0"><span data-en>I am 18 or older. I agree to the <a href="#privacy">Privacy Policy</a> and allow Jaat Samaj Seva to contact me about the services I selected. I can withdraw consent anytime.</span><span data-hi>मैं 18 वर्ष या अधिक आयु का/की हूँ। मैं <a href="#privacy">गोपनीयता नीति</a> से सहमत हूँ और चुनी गई सेवाओं के बारे में संपर्क की अनुमति देता/देती हूँ। मैं कभी भी सहमति वापस ले सकता/सकती हूँ।</span></label></div>
+  <button class="btn" type="submit" style="margin-top:10px"><span data-en>Submit</span><span data-hi>जमा करें</span></button>
+  <div id="msg" role="status"></div>
+</form>
+
+<h2 id="privacy"><span data-en>Privacy Policy</span><span data-hi>गोपनीयता नीति</span></h2>
+<div class="legal">
+<p class="note">Template only. Replace the [bracketed] items and have a lawyer review it before launch.</p>
+<div data-en>
+<h3>What we collect</h3><p>Name, mobile number, optional email, village/city, and the services you choose.</p>
+<h3>Why</h3><p>Only to contact you about the services you selected and to improve the site. We do not sell your data.</p>
+<h3>Your rights</h3><ul><li>Withdraw consent, or ask us to correct or delete your data, by writing to the grievance contact below.</li><li>We aim to respond to grievances within 90 days (sooner where we can).</li></ul>
+<h3>Security and retention</h3><p>We use reasonable security safeguards and keep data only as long as needed for the purpose.</p>
+<h3>Children</h3><p>This site is for adults (18+). We do not knowingly collect data of minors.</p>
+<h3>Grievance contact</h3><p>[Name], [Email], [Phone]. Operated by [Registered entity name], [Address].</p>
+</div>
+<div data-hi>
+<h3>हम क्या जानकारी लेते हैं</h3><p>नाम, मोबाइल नंबर, वैकल्पिक ईमेल, गाँव/शहर और आपकी चुनी हुई सेवाएँ।</p>
+<h3>क्यों</h3><p>केवल आपकी चुनी सेवाओं के बारे में संपर्क करने और साइट सुधारने के लिए। हम आपका डेटा बेचते नहीं हैं।</p>
+<h3>आपके अधिकार</h3><ul><li>नीचे दिए संपर्क को लिखकर सहमति वापस लें, या डेटा सुधारने/हटाने को कहें।</li><li>हम शिकायतों का उत्तर 90 दिनों के भीतर (संभव हो तो जल्दी) देने का प्रयास करते हैं।</li></ul>
+<h3>सुरक्षा और अवधि</h3><p>हम उचित सुरक्षा उपाय अपनाते हैं और डेटा केवल आवश्यक समय तक रखते हैं।</p>
+<h3>बच्चे</h3><p>यह साइट वयस्कों (18+) के लिए है। हम जानबूझकर नाबालिगों का डेटा नहीं लेते।</p>
+<h3>शिकायत संपर्क</h3><p>[नाम], [ईमेल], [फ़ोन]। संचालक: [पंजीकृत संस्था का नाम], [पता]।</p>
+</div>
+</div>
+
+<h2 id="terms"><span data-en>Terms of Use</span><span data-hi>उपयोग की शर्तें</span></h2>
+<div class="legal">
+<p class="note">Template only. Have a lawyer review before launch.</p>
+<div data-en><ul><li>You must be 18 or older and provide true information.</li><li>Do not post fake, abusive, unlawful or hateful content. We may remove content and accounts that break these rules.</li><li>We list professionals and agents but do not guarantee their services; verify licences and documents yourself.</li><li>Paid plans, if any, follow the refund policy shown at purchase.</li><li>These terms are governed by the laws of India; courts at [City] have jurisdiction.</li></ul></div>
+<div data-hi><ul><li>आपकी आयु 18 वर्ष या अधिक हो और जानकारी सही दें।</li><li>नकली, अपमानजनक, गैरकानूनी या घृणा फैलाने वाली सामग्री न डालें। नियम तोड़ने पर हम सामग्री/खाते हटा सकते हैं।</li><li>हम पेशेवरों और एजेंटों को सूचीबद्ध करते हैं पर उनकी सेवाओं की गारंटी नहीं देते; लाइसेंस और दस्तावेज़ स्वयं जाँचें।</li><li>सशुल्क योजनाओं पर खरीद के समय दी गई रिफंड नीति लागू होगी।</li><li>ये शर्तें भारतीय कानून के अधीन हैं; [शहर] के न्यायालयों का अधिकार क्षेत्र होगा।</li></ul></div>
+</div>
+
+<footer>© 2026 <span data-en>Jaat Samaj Seva</span><span data-hi>जाट समाज सेवा</span></footer>
+</div>
+<script>
+// Paste your Formspree / Google Apps Script URL here to receive sign-ups.
+var FORM_ENDPOINT = "";
+function setLang(l){
+  document.body.setAttribute('data-lang',l);document.documentElement.lang=l;
+  document.getElementById('b-en').classList.toggle('on',l==='en');
+  document.getElementById('b-hi').classList.toggle('on',l==='hi');
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+try{var s=localStorage.getItem('lang');if(s==='hi'||s==='en')setLang(s)}catch(e){}
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var hi=document.body.getAttribute('data-lang')==='hi',m=document.getElementById('msg'),f=e.target;
+  var d={name:f.name.value,phone:f.phone.value,email:f.email.value,place:f.place.value,
+    services:[].slice.call(f.querySelectorAll('[name=svc]:checked')).map(function(x){return x.value}).join(', '),
+    consent:true,time:new Date().toISOString()};
+  if(!FORM_ENDPOINT){m.textContent=hi?'डेमो मोड: फ़ॉर्म एंडपॉइंट अभी जुड़ा नहीं है।':'Demo mode: form endpoint is not connected yet.';return;}
+  fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+  .then(function(r){if(!r.ok)throw 0;m.textContent=hi?'धन्यवाद! हम जल्द संपर्क करेंगे।':'Thank you! We will contact you soon.';f.reset()})
+  .catch(function(){m.textContent=hi?'कुछ गड़बड़ हुई। कृपया दोबारा प्रयास करें।':'Something went wrong. Please try again.'});
+});
+</script>
+</body>
+</html>
